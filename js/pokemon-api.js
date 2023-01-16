@@ -19,7 +19,7 @@ const PokeApi = {
 
 function pokemonConvertPokeAPIToClass(pokeDetails) {
     const pokemon = new Pokemon();
-    pokemon.order = pokeDetails.order;
+    pokemon.order = pokeDetails.id;
     pokemon.name = pokeDetails.name;
     const types = pokeDetails.types.map((typeslot) => typeslot.type.name);
     const [type] = types;
