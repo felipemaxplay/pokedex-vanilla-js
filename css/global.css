@@ -3,17 +3,21 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+}
+
 .content {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     padding: 1rem;
-    background-color: #e1e1e1;
+    background-color: #494949;
+    color: white;
 }
 
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;
-        height: auto;
         margin: 1rem auto;
         border-radius: 1rem;
     }
