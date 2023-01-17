@@ -12,6 +12,11 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.pokemon:hover {
+    border: 2px solid white;
 }
 
 .pokemon .pokemon-number {
