@@ -4,6 +4,14 @@ let offset = 0;
 const limit = 20;
 const maxRecords = 251;
 
+function pokemonLiModifier() {
+    let pokemonLI = document.querySelectorAll(".pokemon");
+
+    for (const li of pokemonLI) {
+        li.addEventListener('click', () => li.style.backgroundColor = "black");
+    }
+}
+
 function LoadMorePokemons(offset, limit) {
     PokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map((pokemon) => `
@@ -18,6 +26,7 @@ function LoadMorePokemons(offset, limit) {
             </div>
         </li>`).join('');
         pokemonList.innerHTML += newHtml;
+        pokemonLiModifier();
     })
 };
 
