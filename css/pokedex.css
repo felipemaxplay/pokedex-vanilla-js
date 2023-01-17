@@ -72,6 +72,11 @@
     padding: .5rem;
     margin: 0.25rem 0;
     font-size: .825rem;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    border: 1px solid white;
 }
 
 @media screen and (min-width: 380px) {
